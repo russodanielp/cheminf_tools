@@ -1,10 +1,13 @@
 # Cheminformatics tools
 
-This repository contains various cheminformatic tools. The requirements are
+This repository contains various cheminformatic tools.
 
 ### Getting Started ###
 
 Running this code requires an Anaconda distribution for Python.  This can be downloaded from the [Anaconda website](https://www.anaconda.com/download/).
+You will need to add Anaconda to your path variable.  [Here is a good tutorial about installing Anaconda and adding
+it to your path](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444).
+
 
 If you have git installed, you may clone this repository by the following command:
 
@@ -12,7 +15,7 @@ If you have git installed, you may clone this repository by the following comman
 git clone https://github.com/russodanielp/cheminf_tools.git
 ```
 
-Alternatively, you can click the 'Clone or download' button to download these files as zip.
+Alternatively, you can click the 'Clone or download' button (upper right corner) to download these files as zip.
 
 To get started, you must first create the appropriate Python environment which is required for this project. If you have
  conda installed from the command line, this is a very simple process.  You can check by running:
@@ -21,6 +24,8 @@ To get started, you must first create the appropriate Python environment which i
  conda
  ```
 
+ If this does not work, refer to the link about about installing Anaconda.
+
 To create this Python environment, simply change directories to the cloned repository (or the downloaded folder containing
 this project) and run the following command:
 
@@ -28,7 +33,7 @@ this project) and run the following command:
 conda env create -f environment.yml
 ```
 
-After the necessary dependecies installed, you must activate this environment before running these scripts. To do that,
+After the necessary dependecies are installed, you must activate this environment before running these scripts. To do that,
 run the following command.
 
 On windows:
@@ -43,7 +48,7 @@ On Linux/Mac:
 source activate cheminformatics
 ```
 
-_IMPORTANT:_ This will need to be done before running any of these Python scripts.
+__IMPORTANT:__ This will need to be done before running any of these Python scripts.
 
 
 ## Building a Random Forest model
