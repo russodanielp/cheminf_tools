@@ -56,7 +56,7 @@ if __name__ == '__main__':
     ext_set_stats = get_class_stats(best_estimator, X_test, y_test_class)
 
     print("Finished training....")
-    print("5-fold cross validation statistics:")
+    print("Test set statistics:")
     for score, val in ext_set_stats.items():
         print(score, '{:.2f}%'.format(val*100))
     print()
