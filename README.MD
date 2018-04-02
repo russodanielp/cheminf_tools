@@ -66,7 +66,7 @@ that in the sdf there are at least two fields/columns/properties: (1) Biological
 
  An example code can be run like this:
  ```
- python build_random_forest.py -ds data/CERAPP_agonist.sdf -nc Name -ac Class
+ python build_random_forest.py -ds data/CERAPP_agonist_training.sdf -nc Name -ac Class
  ```
 
 After running the following files will be generated:
@@ -87,9 +87,12 @@ biological activity will be used to generate statistics.
 
  An example code can be run like this:
  ```
- python predict_random_forest.py -ds data/CERAPP_agonist.sdf -nc Name -ac Class
+ python predict_random_forest.py -ds data/CERAPP_agonist_test.sdf -nc Name -ac Class
  ```
 
 After running the following files will be generated:
 1) `Random_forest_test_set_results.csv` -- `.csv` file containing test set scores.
 2) `Random_forest_test_set_predictions.csv` -- `.csv` file containing test set predictions.
+
+
+CONTACT: danrusso@rutgers.edu
