@@ -33,6 +33,12 @@ this project) and run the following command:
 conda env create -f environment.yml
 ```
 
+If this does not work you can create the correct environment by running:
+
+```
+conda create -n cheminformatics -c rdkit rdkit scikit-learn
+```
+
 After the necessary dependecies are installed, you must activate this environment before running these scripts. To do that,
 run the following command.
 
